@@ -1,0 +1,500 @@
+   32  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   33  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   34  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   35  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   36  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   37  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   38  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   39  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   40  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   41  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   42  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   43  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   44  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs afe9bebe0fcdf
+   45  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   46  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   47  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   48  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs bb2750d19edc9
+   49  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   50  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs 53b148a9d1963
+   51  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   52  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs 99c210297d2ed
+   53  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs 99c210297d2ed
+   54  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   55  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   56  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   57  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   58  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   59  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   60  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock logs ec58eee16b0aa
+   61  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   62  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   63  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   64  kubectl get nodes
+   65  kubectl get nodes
+   66  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+   67  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+   68  kubectl get nodes
+   69  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   70  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps
+   71  crictl --runtime-endpoint unix:///var/run/containerd/containerd.sock ps -a
+   72  kubectl get nodes
+   73  kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
+   74  kubectl get nodes
+   75  kubectl get pod --all-namespaces
+   76  kubectl logs -n kube-flannel kube-flannel-ds-d6ck6
+   77  kubectl get pod --all-namespaces
+   78  kubectl logs -n kube-flannel kube-flannel-ds-d6ck6
+   79  kubectl logs -n kube-flannel kube-flannel-ds-d6ck6
+   80  kubectl get pod --all-namespaces
+   81  kubectl delete -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
+   82  wget https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
+   83  vim kube-flannel.yml 
+   84  kubectl apply -f kube-flannel.yml 
+   85  kubectl apply -f kube-flannel.yml 
+   86  kubectl apply -f kube-flannel.yml 
+   87  vim kube-flannel.yml 
+   88  kubectl apply -f kube-flannel.yml 
+   89  vim kube-flannel.yml 
+   90  kubectl apply -f kube-flannel.yml 
+   91  vim kube-flannel.yml 
+   92  vim kubeadm-config.yml 
+   93  vim kubeadm-config.yml 
+   94  kubectl apply -f kube-flannel.yml 
+   95  vim kubeadm-config.yml 
+   96  vim kubeadm-config.yml 
+   97  export KUBECONFIG=/etc/kubernetes/admin.conf
+   98  kubectl get nodes
+   99  kubectl get pods --all-namespaces
+  100  kubectl get nodes
+  101  kubectl get pods --all-namespaces
+  102  history | grep calico
+  103  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  104  clear
+  105  kubectl get pods --all-namespaces
+  106  kubectl get pods --all-namespaces
+  107  kubectl get pods --all-namespaces
+  108  kubectl get pods --all-namespaces
+  109  kubectl get pods --all-namespaces
+  110  kubectl get pods --all-namespaces
+  111  kubectl get pods
+  112  kubectl get pods --all-namespaces
+  113  kubectl get pods --all-namespaces
+  114  kubectl get pods --all-namespaces
+  115  kubectl logs kube-scheduler-master01 -n kube-system
+  116  kubectl get pods --all-namespaces
+  117  kubectl get pods --all-namespaces
+  118  kubectl get pods --all-namespaces
+  119  kubectl get pods --all-namespaces
+  120  kubectl get pods --all-namespaces
+  121  kubectl logs kube-proxy-wpckr -n kube-system
+  122  kubectl get pods --all-namespaces
+  123  kubectl logs kube-proxy-wpckr -n kube-system
+  124  kubectl get pods --all-namespaces
+  125  kubectl logs calico-kube-controllers-5fc7d6cf67-jpw6n -n kube-system
+  126  kubectl get pods --all-namespaces
+  127  kubectl logs kube-proxy-wpckr -n kube-system
+  128  calico-node --iptables-localhost-nodeports=false
+  129  kubectl get pods --all-namespaces
+  130  kubectl edit pod kube-proxy-wpckr -n kube-system
+  131  kubectl get pods --all-namespaces
+  132  kubectl get pods --all-namespaces
+  133  kubectl get pods --all-namespaces
+  134  kubectl get pods --all-namespaces
+  135  kubectl get pods --all-namespaces
+  136  kubectl get pods --all-namespaces
+  137  service kubelet restart
+  138  service kubelet status
+  139  vim /etc/resolv.conf 
+  140  service kubelet restart
+  141  service kubelet status
+  142  kubectl get pods --all-namespaces
+  143  kubectl get pods --all-namespaces
+  144  kubectl get pods --all-namespaces
+  145  kubectl get pods --all-namespaces
+  146  kubectl get pods --all-namespaces
+  147  kubectl get pods --all-namespaces
+  148  kubectl get pods --all-namespaces
+  149  kubectl get pods --all-namespaces
+  150  kubectl get pods --all-namespaces
+  151  kubectl get pods --all-namespaces
+  152  kubectl get pods --all-namespaces
+  153  kubectl get pods --all-namespaces
+  154  kubectl get pods --all-namespaces
+  155  kubectl get pods --all-namespaces
+  156  kubectl get pods --all-namespaces
+  157  kubectl get pods --all-namespaces
+  158  kubectl get pods --all-namespaces
+  159  kubectl get pods --all-namespaces
+  160  kubectl get pods --all-namespaces
+  161  kubectl get nodes
+  162  kubectl get pods --all-namespaces
+  163  history | grep scp
+  164  cp /etc/kubernetes/pki/ca.crt root@37.60.238.101:/etc/kubernetes/pki/
+  165  scp /etc/kubernetes/pki/ca.crt root@37.60.238.101:/etc/kubernetes/pki/
+  166  scp /etc/kubernetes/pki/ca.crt root@37.60.239.101:/etc/kubernetes/pki/
+  167  scp /etc/kubernetes/pki/ca.key root@37.60.239.101:/etc/kubernetes/pki/
+  168  scp /etc/kubernetes/pki/sa.* root@37.60.239.101:/etc/kubernetes/pki/
+  169  scp /etc/kubernetes/pki/front-proxy-ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  170  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  171  kubectl get pods --all-namespaces
+  172  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  173  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  174  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/
+  175  scp /etc/kubernetes/pki/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  176  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  177  scp /etc/kubernetes/pki/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  178  kubectl get pods --all-namespaces
+  179  kubectl get pods --all-namespaces
+  180  scp /etc/kubernetes/pki/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  181  scp /etc/kubernetes/pki/sa.* root@37.60.239.101:/etc/kubernetes/pki/
+  182  scp /etc/kubernetes/pki/front-proxy-ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  183  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/
+  184  kubectl get pods --all-namespaces
+  185  scp /etc/kubernetes/pki/ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  186  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/
+  187  scp /etc/kubernetes/pki/front-proxy-ca.* root@37.60.239.101:/etc/kubernetes/pki/
+  188  scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/
+  189  scp /etc/kubernetes/pki/sa.* root@37.60.239.101:/etc/kubernetes/pki/
+  190  echo "scp /etc/kubernetes/pki/sa.* root@37.60.239.101:/etc/kubernetes/pki/" > movecert.sh
+  191  echo "scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/" >> movecert.sh 
+  192  echo "scp /etc/kubernetes/pki/front-proxy-ca.* root@37.60.239.101:/etc/kubernetes/pki/" >> movecert.sh 
+  193  echo "scp /etc/kubernetes/pki/etcd/ca.* root@37.60.239.101:/etc/kubernetes/pki/etcd/" >> movecert.sh 
+  194  kubectl get pods --all-namespaces
+  195  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  196  kubectl get pods --all-namespaces
+  197  kubectl get pods --all-namespaces
+  198  chmod +x movecert.sh 
+  199  ./movecert.sh 
+  200  chmod +x movecert.sh 
+  201  ./movecert.sh 
+  202  vim movecert.sh 
+  203  ./movecert.sh 
+  204  kubectl get pods --all-namespaces
+  205  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  206  kubectl get pods --all-namespaces
+  207  ./movecert.sh 
+  208  ./movecert.sh 
+  209  kubectl get nodes
+  210  kubectl get nodes
+  211  kubectl get nodes
+  212  ./movecert.sh 
+  213  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  214  kubectl get pods --all-namespaces
+  215  kubectl get pods --all-namespaces
+  216  ./movecert.sh 
+  217  clear
+  218  kubectl get pods --all-namespaces
+  219  kubectl get pods --all-namespaces
+  220  kubectl get pods --all-namespaces
+  221  kubectl get pods --all-namespaces
+  222  kubectl get pods --all-namespaces
+  223  kubectl get pods --all-namespaces
+  224  kubectl get pods --all-namespaces
+  225  kubectl logs calico-node-l2ngr -n kube-system
+  226  kubectl get pods --all-namespaces
+  227  kubectl get pods --all-namespaces
+  228  kubectl logs kube-proxy-qkg5m -n kube-system
+  229  kubectl get pods --all-namespaces
+  230  kubectl get pods --all-namespaces
+  231  kubectl get pods --all-namespaces
+  232  kubectl get pods --all-namespaces
+  233  kubectl get pods --all-namespaces
+  234  kubectl get pods --all-namespaces
+  235  kubectl get pods --all-namespaces
+  236  kubectl get pods --all-namespaces
+  237  kubectl get pods --all-namespaces
+  238  kubectl get pods --all-namespaces
+  239  kubectl get pods --all-namespaces
+  240  kubectl get pods --all-namespaces
+  241  kubectl get pods --all-namespaces
+  242  kubectl logs kube-proxy-qkg5m -n kube-system
+  243  clear
+  244  kubectl get pods --all-namespaces
+  245  kubectl get pods --all-namespaces
+  246  kubectl get pods --all-namespaces
+  247  kubectl get pods --all-namespaces
+  248  kubectl get pods --all-namespaces
+  249  kubectl get pods --all-namespaces
+  250  kubectl get pods --all-namespaces
+  251  kubectl get pods --all-namespaces
+  252  kubectl get pods --all-namespaces
+  253  kubectl get pods --all-namespaces
+  254  kubectl get pods --all-namespaces
+  255  kubectl get pods --all-namespaces
+  256  kubectl get pods --all-namespaces
+  257  kubectl get pods --all-namespaces
+  258  kubectl get pods --all-namespaces
+  259  kubectl get pods --all-namespaces
+  260  kubectl get pods --all-namespaces
+  261  kubectl get pods --all-namespaces
+  262  kubectl delete pod calico-node-l2ngr -n kube-system --force
+  263  kubectl get pods --all-namespaces
+  264  kubectl get pods --all-namespaces
+  265  kubectl get pods --all-namespaces
+  266  kubectl get pods --all-namespaces
+  267  kubectl get pods --all-namespaces
+  268  kubectl get pods --all-namespaces
+  269  kubectl get pods --all-namespaces
+  270  kubectl get pods --all-namespaces
+  271  kubectl logs calico-node-fmfvf -n kube-system
+  272  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  273  kubectl get pods --all-namespaces
+  274  kubectl get pods --all-namespaces
+  275  kubectl get pods --all-namespaces
+  276  kubectl get pods --all-namespaces
+  277  kubectl get nodes
+  278  kubectl get pods --all-namespaces
+  279  kubectl get pods --all-namespaces
+  280  kubectl get pods --all-namespaces
+  281  clear
+  282  kubectl get nodes
+  283  kubectl delete node master02 --force
+  284  kubectl get nodes
+  285  kubectl get pods --all-namespaces
+  286  kubectl get pods --all-namespaces
+  287  kubectl get pods --all-namespaces
+  288  kubectl get pods --all-namespaces
+  289  kubectl get pods --all-namespaces
+  290  kubectl get pods --all-namespaces
+  291  kubectl get pods --all-namespaces
+  292  kubectl get pods --all-namespaces
+  293  ./movecert.sh 
+  294  kubectl get nodes
+  295  kubectl get pods --all-namespaces
+  296  kubectl get pods --all-namespaces
+  297  kubectl get pods --all-namespaces
+  298  kubectl get pods --all-namespaces
+  299  kubectl get pods --all-namespaces
+  300  kubectl get pods --all-namespaces
+  301  kubectl get pods --all-namespaces
+  302  kubectl get pods --all-namespaces
+  303  kubectl get pods --all-namespaces
+  304  kubectl get pods --all-namespaces
+  305  kubectl get pods --all-namespaces
+  306  kubectl get pods --all-namespaces
+  307  kubectl get pods --all-namespaces
+  308  kubectl get pods --all-namespaces
+  309  kubectl get pods --all-namespaces
+  310  kubectl delete pod calico-node-ljd9g -n kube-system --force
+  311  kubectl get pods --all-namespaces
+  312  kubectl get pods --all-namespaces
+  313  kubectl get pods --all-namespaces
+  314  kubectl get pods --all-namespaces
+  315  kubectl get node
+  316  kubectl get pods --all-namespaces
+  317  kubectl get pods --all-namespaces
+  318  kubectl get node
+  319  kubectl get node
+  320  kubectl logs calico-node-t8jc5 -n kube-system
+  321  kubectl delete -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  322  ls
+  323  rm -rf root@37.60.239.101
+  324  kubectl apply -f kube-flannel.yml 
+  325  kubectl get node
+  326  kubectl get pods --all-namespaces
+  327  kubectl get pods --all-namespaces
+  328  kubectl get pods --all-namespaces
+  329  kubectl get pods --all-namespaces
+  330  kubectl get node
+  331  kubectl get pods --all-namespaces
+  332  kubectl get pods --all-namespaces
+  333  kubectl get pods --all-namespaces
+  334  kubectl delete -f kube-flannel.yml 
+  335  iptables -F
+  336  kubectl apply -f kube-flannel.yml 
+  337  kubectl get pods --all-namespaces
+  338  kubectl get pods --all-namespaces
+  339  kubectl get nodes
+  340  clear
+  341  kubectl get nodes
+  342  kubectl get pods --all-namespaces
+  343  kubectl get pods --all-namespaces -o wide
+  344  kubectl get pods --all-namespaces -o wide
+  345  kubectl delete -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  346  kubectl delete -f kube-flannel.yml 
+  347  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  348  clear
+  349  kubectl get pods --all-namespaces -o wide
+  350  kubectl get pods --all-namespaces -o wide
+  351  kubectl get pods --all-namespaces -o wide
+  352  kubectl get pods --all-namespaces -o wide
+  353  kubectl get pods --all-namespaces -o wide
+  354  kubectl get pods --all-namespaces -o wide
+  355  kubectl get pods --all-namespaces -o wide
+  356  kubectl get pods --all-namespaces -o wide
+  357  kubectl get pods --all-namespaces -o wide
+  358  kubectl get pods --all-namespaces -o wide
+  359  kubectl get pods --all-namespaces -o wide
+  360  kubectl get pods --all-namespaces -o wide
+  361  kubectl get pods --all-namespaces -o wide
+  362  kubectl get pods --all-namespaces -o wide
+  363  kubectl get pods --all-namespaces -o wide
+  364  kubectl get pods --all-namespaces -o wide
+  365  kubectl get pods --all-namespaces -o wide
+  366  kubectl get pods --all-namespaces -o wide
+  367  kubectl get pods --all-namespaces -o wide
+  368  kubectl get pods --all-namespaces -o wide
+  369  kubectl get pods --all-namespaces -o wide
+  370  ip a
+  371  cat /etc/hosts
+  372  export VIP=10.0.0.5
+  373  export INTERFACE=eth1
+  374  KVVERSION=$(curl -sL https://api.github.com/repos/kube-vip/kube-vip/releases | jq -r ".[0].name")
+  375  apt install jq
+  376  KVVERSION=$(curl -sL https://api.github.com/repos/kube-vip/kube-vip/releases | jq -r ".[0].name")
+  377  alias kube-vip="ctr run --rm --net-host ghcr.io/kube-vip/kube-vip:$KVVERSION vip /kube-vip"
+  378  kube-vip manifest pod     --interface $INTERFACE     --vip $VIP     --controlplane     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  379  nslookup ghcr.io
+  380  apt install nslookup
+  381  apt install dns-utils
+  382  apt install bind-utils
+  383  apt install bind9-utils
+  384  nslookup ghcr.io
+  385  service containerd status
+  386  kube-vip manifest pod     --interface $INTERFACE     --vip $VIP     --controlplane     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  387  alias kube-vip="ctr image pull ghcr.io/kube-vip/kube-vip:$KVVERSION; ctr run --rm --net-host ghcr.io/kube-vip/kube-vip:$KVVERSION vip /kube-vip"
+  388  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  389  kubeadm init --config kubeadm-config.yml 
+  390  kubeadm reset
+  391  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  392  kubeadm init --config kubeadm-config.yml 
+  393  kubeadm reset
+  394  vim kubeadm-config.yml 
+  395  kubeadm init --config kubeadm-config.yml 
+  396  kubeadm reset
+  397  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  398  kubeadm init --config kubeadm-config.yml 
+  399  kubeadm reset
+  400  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  401  kubeadm init --config kubeadm-config.yml 
+  402  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  403  kubeadm init --config kubeadm-config.yml 
+  404  kubeadm reset
+  405  ipvsadm --clear
+  406  kube-vip manifest pod     --interface $INTERFACE     --address $VIP     --controlplane     --services     --arp     --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  407  kubeadm init --config kubeadm-config.yml 
+  408  kubeadm reset
+  409  apt install keepalived
+  410  vim /etc/keepalived/keepalived.conf
+  411  locate keepalived.conf
+  412  apt install mlocate
+  413  updatedb
+  414  locate keepalived.conf
+  415  vim /etc/keepalived/keepalived.conf
+  416  cat /etc/keepalived/keepalived.conf
+  417  vim /etc/keepalived/check_apiserver.sh
+  418  mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.heartbeat
+  419  echo "" > /etc/haproxy/haproxy.cfg
+  420  vim /etc/haproxy/haproxy.cfg
+  421  vim /etc/keepalived/check_apiserver.sh
+  422  vim /etc/keepalived/keepalived.conf
+  423  ls
+  424  less keepalived.yaml
+  425  vim haproxy.yaml
+  426  cp haproxy.yaml /etc/kubernetes/manifests
+  427  cp keepalived.yaml /etc/kubernetes/manifests
+  428  kubeadm reset
+  429  cp haproxy.yaml /etc/kubernetes/manifests
+  430  cp keepalived.yaml /etc/kubernetes/manifests
+  431  kubeadm init --config kubeadm-config.yml 
+  432  kubeadm reset
+  433  cp keepalived.yaml /etc/kubernetes/manifests
+  434  cp haproxy.yaml /etc/kubernetes/manifests/
+  435  kubeadm init --config kubeadm-config.yml --v=5
+  436  kubeadm reset
+  437  ipvsadm --clear
+  438  ip add add 10.0.0.5/32 dev eth1
+  439  ip a
+  440  ping 10.0.0.5
+  441  vim kubeadm-config.yml 
+  442  kubeadm init --config kubeadm-config.yml --v=5
+  443  kubeadm reset
+  444  vim kubeadm-config.yml 
+  445  kubeadm init --config kubeadm-config.yml --v=5
+  446  kubeadm reset
+  447  ipvsadm --clear
+  448  ip a
+  449  vim kubeadm-config.yml 
+  450  kubeadm init --config kubeadm-config.yml --v=5
+  451  kubeadm reset
+  452  ipvsadm --clear
+  453  kubeadm init --config kubeadm-config.yml --v=5
+  454  kubeadm reset
+  455  n
+  456  kubeadm reset
+  457  kubeadm init --config kubeadm-config.yml --v=5
+  458  kubeadm reset
+  459  kubeadm init --config kubeadm-config.yml --v=5
+  460  kubeadm reset
+  461  kubeadm init --config kubeadm-config.yml --v=5
+  462  kubeadm init --config kubeadm-config.yml --v=5
+  463  kubeadm init --config kubeadm-config.yml --v=5
+  464  vim kubeadm-config.yml 
+  465  vim /etc/containerd/config.toml 
+  466  service containerd restart
+  467  service containerd status
+  468  vim kubeadm-config.yml 
+  469  kubeadm reset
+  470  kubeadm init --config kubeadm-config.yml --v=5
+  471  kubbeadm reset
+  472  kubeadm reset
+  473  vim kubeadm-config.yml 
+  474  kubeadm init --config kubeadm-config.yml --v=5
+  475  vim kubeadm-config.yml 
+  476  kubeadm init --config kubeadm-config.yml --v=5
+  477  kubeadm reset
+  478  kubeadm init --config kubeadm-config.yml --v=5
+  479  cat /etc/hosts
+  480  vi /etc/hosts
+  481  kubectl get nodes
+  482  export KUBECONFIG=/etc/kubernetes/admin.conf
+  483  kubectl get nodes
+  484  kubectl get pods --all-namespaces -o wide
+  485  kubectl delete -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
+  486  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+  487  kubectl get pods --all-namespaces -o wide
+  488  kubectl get pods --all-namespaces -o wide
+  489  kubectl get pods --all-namespaces -o wide
+  490  kubectl get pods --all-namespaces -o wide
+  491  kubectl get pods --all-namespaces
+  492  kubectl logs calico-kube-controllers-7ddc4f45bc-rwcpn -n kube-system
+  493  kubectl get pods --all-namespaces
+  494  kubectl get pods --all-namespaces
+  495  kubectl get pods --all-namespaces
+  496  kubectl get pods --all-namespaces
+  497  kubectl get pods --all-namespaces
+  498  kubectl get pods --all-namespaces
+  499  kubectl get pods --all-namespaces
+  500  reboot
+  501  export KUBECONFIG=/etc/kubernetes/admin.conf
+  502  kubect get nodes
+  503  kubectl get nodes
+  504  kubectl get pod --all-namespaces
+  505  kubectl get pod --all-namespaces -o wide
+  506  kubeadm reset
+  507  ipvsadm --clear
+  508  iptables -F
+  509  iptables -L
+  510  service containerd restart
+  511  service containerd status
+  512  vim kubeadm-config.yml 
+  513  kubeadm init --config kubeadm-config.yml --v=5
+  514  kubeadm reset
+  515  vim kubeadm-config.yml 
+  516  iptables -L
+  517  iptables -F
+  518  kubeadm init --config kubeadm-config.yml --v=5
+  519  parted -l
+  520  apt install parted
+  521  parted -l
+  522  ls
+  523  apt install git
+  524  git clone https://github.com/wingufactory/softstream.git
+  525  ls
+  526  cp haproxy.yaml softstream/
+  527  cp keepalived.yaml softstream/
+  528  cp kubeadm-config.yml softstream/
+  529  cp movecert.sh softstream/
+  530  cd softstream/
+  531  history > history_master01.txt

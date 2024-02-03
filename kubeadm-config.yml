@@ -1,0 +1,51 @@
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+  - "master01"
+  - "master02"
+  - "loadbalancer"
+  - "37.60.238.46"
+  - "37.60.239.101"
+  - "10.0.0.3"
+  - "10.0.0.4"
+  - "10.0.0.5"
+  - "127.0.0.1"
+  extraArgs:
+    advertise-address: "10.0.0.4"  # Replace with your master node's IP address
+controlPlaneEndpoint: "10.0.0.5:6443"  # Replace with your master node's IP address
+networking:
+  podSubnet: "10.244.0.0/16"
+  serviceSubnet: "10.96.0.0/16"
+etcd:
+  local:
+    serverCertSANs:
+      - "master01"
+      - "master02"
+      - "loadbalancer"
+      - "37.60.238.46"
+      - "37.60.239.101"
+      - "10.0.0.3"
+      - "10.0.0.4"
+      - "10.0.0.5"
+      - "127.0.0.1"
+    peerCertSANs:
+      - "master01"
+      - "master02"
+      - "loadbalancer"
+      - "37.60.238.46"
+      - "37.60.239.101"
+      - "10.0.0.3"
+      - "10.0.0.4"
+      - "10.0.0.5"
+      - "127.0.0.1"
+    extraArgs:
+      election-timeout: "5000"
+      heartbeat-interval: "250"
+      quota-backend-bytes: "4294967296"
+---
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: "10.0.0.4"
+  bindPort: 6443
