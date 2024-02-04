@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: registry
+  namespace: devops-tools
+spec:
+  template:
+    spec:
+      containers:
+      - name: registry-db-job 
+        image: bitnami/postgresql:latest
+        command: ["createdb"]
+        args: ["-h","harbordb-release-postgresql", "-U", "harbor", "registry" ]
+        env:
+        - name: PGPASSWORD
+          value: passer123
+      restartPolicy: Never

@@ -1,0 +1,118 @@
+image:
+  registry: docker.io
+  repository: bitnami/postgresql
+  tag: 16.1.0-debian-11-r26
+  digest: ""
+  ## Specify a imagePullPolicy
+  ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
+  ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
+  ##
+  pullPolicy: IfNotPresent
+  ## Optionally specify an array of imagePullSecrets.
+  ## Secrets must be manually created in the namespace.
+  ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+  ## Example:
+  ## pullSecrets:
+  ##   - myRegistryKeySecretName
+  ##
+  pullSecrets: []
+  ## Set to true if you would like to see extra information on logs
+  ##
+  debug: true
+auth:
+  enablePostgresUser: true
+  username: "harbor"
+  database: "harbor"
+  existingSecret: "harbordb-secret"
+  secretKeys:
+    adminPasswordKey: harbordb-admin-password
+    userPasswordKey: harbordb-user-password
+  usePasswordFiles: true
+architecture: "standalone"
+
+volumePermissions:
+  ## @param volumePermissions.enabled Enable init container that changes the owner and group of the persistent volume
+  ##
+  enabled: true
+
+containerPorts:
+  postgresql: 5432
+
+audit:
+  logHostname: false
+  logConnections: false
+  logDisconnections: false
+  pgAuditLog: ""
+  pgAuditLogCatalog: "off"
+  clientMinMessages: error
+  logLinePrefix: ""
+  logTimezone: ""
+
+postgresqlDataDir: /bitnami/postgresql/data
+postgresqlSharedPreloadLibraries: "pgaudit"
+
+## @section PostgreSQL Primary parameters
+##
+primary:
+  name: primary
+  pgHbaConfiguration: ""
+  existingConfigmap: ""
+  livenessProbe:
+    enabled: true
+    initialDelaySeconds: 30
+    periodSeconds: 10
+    timeoutSeconds: 5
+    failureThreshold: 6
+    successThreshold: 1
+  readinessProbe:
+    enabled: true
+    initialDelaySeconds: 5
+    periodSeconds: 10
+    timeoutSeconds: 5
+    failureThreshold: 6
+    successThreshold: 1
+  startupProbe:
+    enabled: false
+    initialDelaySeconds: 30
+    periodSeconds: 10
+    timeoutSeconds: 1
+    failureThreshold: 15
+    successThreshold: 1
+  resources:
+    limits: {}
+    requests:
+      memory: 256Mi
+      cpu: 250m
+  podSecurityContext:
+    enabled: true
+    fsGroup: 999
+  containerSecurityContext:
+    enabled: true
+    runAsUser: 999
+    runAsGroup: 0
+    runAsNonRoot: true
+    allowPrivilegeEscalation: false
+    seccompProfile:
+      type: RuntimeDefault
+    capabilities:
+      drop:
+        - ALL
+  hostNetwork: false
+  hostIPC: false
+  updateStrategy:
+    type: RollingUpdate
+    rollingUpdate: {}
+  extraPodSpec: {}
+
+  service:
+    type: ClusterIP
+    ports:
+      postgresql: 5432
+    externalTrafficPolicy: Cluster
+
+  persistence:
+    enabled: true
+    existingClaim: "harbordb-pvc"
+    mountPath: /bitnami/postgresql
+    accessModes:
+      - ReadWriteOnce

@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: harbordb-pv
+  namespace: devops-tools
+spec:
+  claimRef:
+    name: harbordb-pvc
+    namespace: devops-tools
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/harbor-db"      # Replace with your NFS export path
+

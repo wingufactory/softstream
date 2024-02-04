@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv
+  namespace: devops-tools
+spec:
+  claimRef:
+    name: data-my-release-harbor-redis-0
+    namespace: devops-tools
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/harbor/redis"      # Replace with your NFS export path
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: trivy-pv
+  namespace: devops-tools
+spec:
+  claimRef:
+    name: data-my-release-harbor-trivy-0
+    namespace: devops-tools
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/harbor/trivy"      # Replace with your NFS export path
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jobservice-pv
+  namespace: devops-tools
+spec:
+  claimRef:
+    name: my-release-harbor-jobservice
+    namespace: devops-tools
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/harbor/jobservice"      # Replace with your NFS export path
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: registry-pv
+  namespace: devops-tools
+spec:
+  claimRef:
+    name: my-release-harbor-registry
+    namespace: devops-tools
+  capacity:
+    storage: 25Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/harbor/registry"      # Replace with your NFS export path
+

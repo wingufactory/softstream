@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-pv
+  namespace: portainer
+spec:
+  capacity:
+    storage: 12Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume"      # Replace with your NFS export path

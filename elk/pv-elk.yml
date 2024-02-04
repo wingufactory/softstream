@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elk1-pv-volume
+  namespace: monitoring
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 40Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/elk1"      # Replace with your NFS export path
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elk2-pv-volume
+  namespace: monitoring
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 40Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: 10.0.0.1  # Replace with your NFS server address
+    path: "/srv/volume/elk2"      # Replace with your NFS export path

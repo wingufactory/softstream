@@ -1,0 +1,17 @@
+## Harbor values
+harbor:
+  ## Admin password
+  harborAdminPassword: "Softream2024"
+
+  ## External database settings
+  externalDatabase:
+    ## Enable external database
+    harborDatabaseType: "external"
+
+    ## Database connection details
+    harborDatabaseHost: "harbordb-release-postgresql"
+    harborDatabasePort: 5432
+    harborDatabaseName: "harbor"
+    harborDatabaseUsername: "harbor"
+    harborDatabasePassword: "passer123"
+
